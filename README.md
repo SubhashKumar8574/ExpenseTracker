@@ -16,7 +16,7 @@ A full-stack, responsive **Expense Tracker Web Application** built with **ReactJ
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Screenshots [Dark Theme+ Light Theme]
 
 
 ### 🔐 Login Page
@@ -30,6 +30,16 @@ A full-stack, responsive **Expense Tracker Web Application** built with **ReactJ
 
 ### 🧾 Chart View
 ![Update Expense](./frontend/public/chart.png)
+
+### 🔐 Signup Page (Light)
+![Login Page](./frontend/public/signup_light.png)
+
+### 🏠 Landing Page with Chart & Expense List (Light)
+![Landing Page](./frontend/public/homepage_light.png)
+
+### 📊 Dashboard with Add Expense Form (Light)
+![Dashboard](./frontend/public/dashboard_light.png)
+
 
 ---
 
