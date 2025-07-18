@@ -40,24 +40,21 @@ const Signup = () => {
 
   return (
     <div
-      className={`min-h-screen flex items-center justify-center px-2 ${
-        isDarkMode
+      className={`min-h-screen flex items-center justify-center px-2 ${isDarkMode
           ? 'bg-gradient-to-br from-gray-800 via-black to-gray-700'
           : 'bg-gradient-to-br from-purple-800 via-purple-300 to-purple-700'
-      }`}
+        }`}
     >
       <form
-        className={`w-full max-w-sm p-8 rounded-2xl shadow-xl flex flex-col gap-4 backdrop-blur-md transition duration-300 ${
-          isDarkMode
+        className={`w-full max-w-sm p-8 rounded-2xl shadow-xl flex flex-col gap-4 backdrop-blur-md transition duration-300 ${isDarkMode
             ? `${colors.card} text-yellow-100 border ${colors.border}`
             : 'bg-white/60 text-black'
-        }`}
+          }`}
         onSubmit={handleSubmit}
       >
         <h2
-          className={`text-2xl font-bold text-center mb-2 ${
-            isDarkMode ? 'text-yellow-300' : 'text-purple-600'
-          }`}
+          className={`text-2xl font-bold text-center mb-2 ${isDarkMode ? 'text-yellow-500' : 'text-purple-600'
+            }`}
         >
           Signup
         </h2>
@@ -69,11 +66,10 @@ const Signup = () => {
           required
           value={form.username}
           onChange={handleChange}
-          className={`p-3 rounded w-full ${
-            isDarkMode
+          className={`p-3 rounded w-full ${isDarkMode
               ? `${colors.input} text-yellow-400 placeholder-yellow-200`
               : 'border border-purple-300'
-          }`}
+            }`}
         />
         <input
           type="email"
@@ -82,11 +78,10 @@ const Signup = () => {
           required
           value={form.email}
           onChange={handleChange}
-          className={`p-3 rounded w-full ${
-            isDarkMode
+          className={`p-3 rounded w-full ${isDarkMode
               ? `${colors.input} text-yellow-400 placeholder-yellow-200`
               : 'border border-purple-300'
-          }`}
+            }`}
         />
         <input
           type="password"
@@ -95,20 +90,18 @@ const Signup = () => {
           required
           value={form.password}
           onChange={handleChange}
-          className={`p-3 rounded w-full ${
-            isDarkMode
+          className={`p-3 rounded w-full ${isDarkMode
               ? `${colors.input} text-yellow-400 placeholder-yellow-200`
               : 'border border-purple-300'
-          }`}
+            }`}
         />
 
         <button
           type="submit"
-          className={`w-full px-6 py-3 rounded font-semibold shadow transition ${
-            isDarkMode
+          className={`w-full px-6 py-3 rounded font-semibold shadow transition ${isDarkMode
               ? 'bg-yellow-500/20 text-yellow-200 hover:bg-yellow-500/30'
               : 'bg-purple-600 text-white hover:bg-purple-700'
-          }`}
+            }`}
           disabled={loading}
         >
           {loading ? 'Signing up...' : 'Signup'}
@@ -125,7 +118,8 @@ const Signup = () => {
 
         <div className="text-center mt-2">
           <span>Already have an account? </span>
-          <Link to="/login" className="text-purple-700 font-semibold hover:underline">
+          <Link to="/login" className={`font-semibold hover:underline ${isDarkMode ? 'text-yellow-500' : 'text-purple-700'
+            }`}>
             Login
           </Link>
         </div>
