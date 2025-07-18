@@ -20,16 +20,16 @@ A full-stack, responsive **Expense Tracker Web Application** built with **ReactJ
 
 
 ### 🔐 Login Page
-![Login Page](./public/login.png)
+![Login Page](./frontend/public/login.png)
 
 ### 🏠 Landing Page with Chart & Expense List
-![Landing Page](./public/landing-page.png)
+![Landing Page](./frontend/public/landing-page.png)
 
 ### 📊 Dashboard with Add Expense Form
-![Dashboard](./public/dashboard.png)
+![Dashboard](./frontend/public/dashboard.png)
 
 ### 🧾 Chart View
-![Update Expense](./public/chart.png)
+![Update Expense](./frontend/public/chart.png)
 
 ---
 
